@@ -1,0 +1,145 @@
+.footer {
+  background-color: #3A3A3A;
+  width: 1728px;
+  height: 477px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-container {
+  width: 1569px;
+  height: 147px;
+  margin-top: 85px;
+  margin-bottom: 162px;
+  margin-left: 84px;
+  margin-right: 75px;
+  display: flex;
+  flex-direction: row;
+}
+
+.footer_left {
+  width: 409px;
+  height: 147px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: space-between;
+}
+
+.label {
+  width: 76px;
+  height: 18px;
+  margin-top: 42px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer_left h1 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.footer_form {
+  width: 477px;
+  height: 147px;
+  margin-left: 132px;
+  margin-right: 373px;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_form span {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 88px;
+  margin-bottom: 13px;
+}
+
+.footer_email {
+  width: 477px;
+  height: 61px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.footer_form input {
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  margin-left: 36px;
+  margin-right: 93px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.footer_form div {
+  color: #000000;
+  font-size: 18px;
+  margin-right: 21px;
+}
+
+.footer_form button {
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 15px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  color: #000000;
+}
+
+.footer_nav {
+  width: 178px;
+  height: 147px;
+}
+
+.footer_nav h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 23px;
+}
+
+.footer_nav ul {
+  list-style: none;
+}
+
+.footer_nav a {
+  text-decoration: none
+}
+
+.footer_nav_li {
+  margin-bottom: 17px;
+}
+
+.footer_contact_email {
+  width: 376px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-bottom: 28px;
+}
+
+.footer_text_color {
+  color: #FFFFFF;
+}
+
+.footer_text_standard {
+  font-size: 18px;
+  font-weight: 400;
+}

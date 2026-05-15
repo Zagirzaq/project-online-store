@@ -1,0 +1,100 @@
+.fixed-btn {
+  position: fixed;
+  top: 20px;
+  padding: 11px 29px;
+  border: 2px solid #515076;
+  background: transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 101;
+  background-color: #fff;
+}
+
+.fixed-btn:hover {
+  background: #515076;
+  color: #fff;
+}
+
+.left-btn {
+  left: 20px;
+}
+
+.right-btn {
+  right: 20px;
+}
+
+#cartCounter {
+  background: #e74c3c;
+  border-radius: 50%;
+  padding: 1px 8px;
+  font-size: 13px;
+  margin-left: 5px;
+  color: white;
+}
+
+#cartItemsContainer {
+  max-height: 300px;
+  overflow-y: auto;
+  margin: 16px 0;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 0;
+}
+
+.cart-item-info {
+  flex: 2;
+}
+
+.cart-item-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.cart-item-controls button {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: #eee;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-item-controls button:hover {
+  background: #ddd;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 19px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #4a90e2;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.submit-btn:hover {
+  background: #979292;
+}
