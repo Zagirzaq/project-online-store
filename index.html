@@ -13,107 +13,109 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="overlay"></div>
-  <button id="openRegistration" class="fixed-btn left-btn">Регистрация</button>
-  <button id="openCart" class="fixed-btn right-btn">&#128722 Корзина <span id="cartCounter">0</span></button>
-  <main>
-  <div class="price-list">
-    <h1 class="list-title">Выбери свой продукт</h1>
-      <ul class="all-cards-container"></ul>
-    </div>
-  </main>
-  <template id="product-cards-template">
-    <li>
-      <div class="card-container">
-        <img src="" alt="" width="290" height="245" class="product-img">
-        <span class="product-category">для нормальной кожи</span>
-        <h3 class="product-name"></h3>
-        <p class="product-description"></p>
-        <span>Состав: </span>
-        <ul class="product-compound"></ul>
-        <div class="product-price-container">
-          <span class="price-label">Цена</span>
-          <span class="product-price"></span>
-        </div>
+  <div class="content-container">
+    <div class="overlay"></div>
+    <button id="openRegistration" class="fixed-btn left-btn">Регистрация</button>
+    <button id="openCart" class="fixed-btn right-btn">&#128722 Корзина <span id="cartCounter">0</span></button>
+    <main>
+    <div class="price-list">
+      <h1 class="list-title">Выбери свой продукт</h1>
+        <ul class="all-cards-container"></ul>
       </div>
-    </li>
-  </template>
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer_left">
-        <h1 class="footer_text_color">Product cards</h1>
-        <p class="footer_text_color footer_text_standard">У Нас Самые Лучшие Продукты Для Кожи!</p>
-        <div class="label">
-          <img src="./images/tg-icon.svg" alt="telegram icon" width="21" height="18">
-          <img src="./images/vk-icon.svg" alt="vk icon" width="24" height="14">
-        </div>
-      </div>
-      <div class="footer_form">
-        <form class="email-form">
-          <span class="footer_text_color">Подпишись на наши акции:</span>
-          <div class="footer_email">
-            <input type="email" placeholder="Введи Email..." name="email" required>
-            <div>|</div>
-            <button type="submit">Подписаться</button>
+    </main>
+    <template id="product-cards-template">
+      <li>
+        <div class="card-container">
+          <img src="" alt="" width="290" height="245" class="product-img">
+          <span class="product-category">для нормальной кожи</span>
+          <h3 class="product-name"></h3>
+          <p class="product-description"></p>
+          <span>Состав: </span>
+          <ul class="product-compound"></ul>
+          <div class="product-price-container">
+            <span class="price-label">Цена</span>
+            <span class="product-price"></span>
           </div>
+        </div>
+      </li>
+    </template>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer_left">
+          <h1 class="footer_text_color">Product cards</h1>
+          <p class="footer_text_color footer_text_standard">У Нас Самые Лучшие Продукты Для Кожи!</p>
+          <div class="label">
+            <img src="./images/tg-icon.svg" alt="telegram icon" width="21" height="18">
+            <img src="./images/vk-icon.svg" alt="vk icon" width="24" height="14">
+          </div>
+        </div>
+        <div class="footer_form">
+          <form class="email-form">
+            <span class="footer_text_color">Подпишись на наши акции:</span>
+            <div class="footer_email">
+              <input type="email" placeholder="Введи Email..." name="email" required>
+              <div>|</div>
+              <button type="submit">Подписаться</button>
+            </div>
+          </form>
+        </div>
+        <nav class="footer_nav">
+          <h1 class="footer_text_color">Быстрые ссылки</h1>
+          <ul>
+            <li class="footer_nav_li"><a href="#" class="footer_text_color footer_text_standard">Главная</a></li>
+            <li class="footer_nav_li"><a href="#" class="footer_text_color footer_text_standard">Магазин</a></li>
+            <li><a href="#" class="footer_text_color footer_text_standard">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer_contact_email">
+        <hr width="66">
+        <span class="footer_text_color footer_text_standard">www.product-cards.com©all right reserve</span>
+      </div>
+    </footer>
+    <div class="modal" id="registrationModal">
+      <div class="modal-content">
+        <span id="closeRegistration" class="close-btn">&times;</span>
+        <h2>Регистрация</h2>
+        <form id="registrationForm">
+          <div class="form-group">
+            <label for="userFirstName">Имя:</label>
+            <input type="text" id="userFirstName" name="userFirstName" placeholder="Введите имя" required minlength="2">
+          </div>
+          <div class="form-group">
+            <label for="userLastName">Фамилия:</label>
+            <input type="text" id="userLastName" name="userLastName" placeholder="Введите фамилию" required minlength="2">
+          </div>
+          <div class="form-group">
+            <label for="date">Дата рождения:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="form-group">
+            <label for="Login">Логин:</label>
+            <input type="text" id="Login" name="Login" placeholder="Введите логин" required minlength="4">
+          </div>
+          <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" placeholder="Введите пароль" required minlength="6">
+          </div>
+          <div class="form-group">
+            <label for="repetPassword">Повторите пароль:</label>
+            <input type="password" id="repetPassword" name="repeatPassword" placeholder="Повторите пароль" required minlength="6">
+          </div>
+          <button type="submit" class="submit-btn">Зарегистрироваться</button>
         </form>
       </div>
-      <nav class="footer_nav">
-        <h1 class="footer_text_color">Быстрые ссылки</h1>
-        <ul>
-          <li class="footer_nav_li"><a href="#" class="footer_text_color footer_text_standard">Главная</a></li>
-          <li class="footer_nav_li"><a href="#" class="footer_text_color footer_text_standard">Магазин</a></li>
-          <li><a href="#" class="footer_text_color footer_text_standard">Контакты</a></li>
-        </ul>
-      </nav>
     </div>
-    <div class="footer_contact_email">
-      <hr width="66">
-      <span class="footer_text_color footer_text_standard">www.product-cards.com©all right reserve</span>
-    </div>
-  </footer>
-  <div class="modal" id="registrationModal">
-    <div class="modal-content">
-      <span id="closeRegistration" class="close-btn">&times;</span>
-      <h2>Регистрация</h2>
-      <form id="registrationForm">
-        <div class="form-group">
-          <label for="userFirstName">Имя:</label>
-          <input type="text" id="userFirstName" name="userFirstName" placeholder="Введите имя" required minlength="2">
+    <div class="modal" id="cartModal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeCart">&times;</span>
+        <h2>Корзина</h2>
+        <div id="cartItemsContainer"></div>
+        <div class="cart-total">
+          Итого: <span id="cartTotal">0</span> ₽
         </div>
-        <div class="form-group">
-          <label for="userLastName">Фамилия:</label>
-          <input type="text" id="userLastName" name="userLastName" placeholder="Введите фамилию" required minlength="2">
-        </div>
-        <div class="form-group">
-          <label for="date">Дата рождения:</label>
-          <input type="date" id="date" name="date" required>
-        </div>
-        <div class="form-group">
-          <label for="Login">Логин:</label>
-          <input type="text" id="Login" name="Login" placeholder="Введите логин" required minlength="4">
-        </div>
-        <div class="form-group">
-          <label for="password">Пароль:</label>
-          <input type="password" id="password" name="password" placeholder="Введите пароль" required minlength="6">
-        </div>
-        <div class="form-group">
-          <label for="repetPassword">Повторите пароль:</label>
-          <input type="password" id="repetPassword" name="repeatPassword" placeholder="Повторите пароль" required minlength="6">
-        </div>
-        <button type="submit" class="submit-btn">Зарегистрироваться</button>
-      </form>
-    </div>
-  </div>
-  <div class="modal" id="cartModal">
-    <div class="modal-content">
-      <span class="close-btn" id="closeCart">&times;</span>
-      <h2>Корзина</h2>
-      <div id="cartItemsContainer"></div>
-      <div class="cart-total">
-        Итого: <span id="cartTotal">0</span> ₽
+        <button id="checkoutBtn" class="submit-btn">Оформить заказ</button>
       </div>
-      <button id="checkoutBtn" class="submit-btn">Оформить заказ</button>
     </div>
   </div>
   <script type="module" src="main.js"></script>
