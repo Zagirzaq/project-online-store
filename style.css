@@ -74,10 +74,10 @@
 .all-cards-container {
   width: 100%;
   max-width: 1110px;
-  height: auto;             /* убираем фиксированную высоту */
+  height: auto;
   list-style: none;
   padding: 0;
-  margin: 0 auto 5rem auto; /* центровка и отступ снизу */
+  margin: 0 auto 5rem auto;
   display: flex;
   justify-content: center;
   gap: 45px;
@@ -86,24 +86,24 @@
 
 .price-list {
   width: 100%;
-  max-width: 1280px;        /* ограничит максимальную ширину на больших экранах */
-  margin: 0 auto;           /* центровка */
-  height: auto;             /* убираем фиксированную высоту */
+  max-width: 1280px;
+  margin: 0 auto;
+  height: auto;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  align-items: center;      /* центрируем заголовок и список */
+  align-items: center;
   background-image: url("./images/bg-dandelions.png");
   background-repeat: no-repeat;
-  background-position: top center;  /* центрируем фон */
+  background-position: top center;
 }
 
 .list-title {
-  width: 90%;               /* процент от родителя */
+  width: 90%;
   max-width: 846px;
-  font-size: clamp(2rem, 5vw, 70px);  /* масштабируемый шрифт */
+  font-size: clamp(2rem, 5vw, 70px);
   line-height: 1.2;
-  margin: 10vh auto 5vh;    /* вертикальные отступы в % от высоты экрана */
+  margin: 10vh auto 5vh;
   text-align: center;
 }
 
@@ -120,20 +120,68 @@
 .content-container {
   position: relative;
   width: 100%;
-  min-height: 100vh;          /* минимум на весь экран */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+  .content-container {
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  .price-list {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+  }
+
+  .list-title {
+    width: auto;
+    margin: 80px 20px 40px;
+    font-size: 2rem;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .all-cards-container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 40px;
+    gap: 30px;
+  }
+
   .card-container {
     width: 90%;
     max-width: 340px;
     height: auto;
     padding: 20px;
   }
+
   .product-img {
     width: 100%;
     height: auto;
+  }
+
+  .footer {
+    width: 100%;
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .footer_left, .footer_form, .footer_nav {
+    width: 100%;
+    margin: 15px 0;
+    text-align: center;
   }
 }
