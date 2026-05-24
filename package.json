@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node check-db.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.10.0"
+  }
+}
